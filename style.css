@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(./bodybackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px 20px;
+  background-color: rgb(121, 218, 171);
+  color: white;
+}
+
+/* LEFT */
+#logo {
+  margin: 0;
+    position: relative;
+  z-index: 10;
+}
+.logo {
+  position: fixed;
+  right: 20px;
+  top: 70px;
+  z-index: 1000;
+}
+
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+li {
+  transition: all 0.3s ease;
+}
+li:hover{
+    border-radius: 10px;
+    background-color: rgb(74, 63, 74);
+    padding: 5px;
+}
+
+
+.nav-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; 
+  margin-left: auto;
+}
+
+.nav-search input {
+  border: none;
+  padding: 10px;
+  outline: none;
+  width: 200px;
+}
+
+.nav-search button {
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  background-color: #555;
+  color: white;
+}
+
+.nav-search button:hover {
+  background-color: #777;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link a:hover {
+  color: #00bcd4;
+}
+
+.hero {
+  display: block; /* 🔥 THIS FIXES EVERYTHING */
+  margin-top: 8%;
+  padding: 20px;
+  
+}
+
+.logo {
+  display: flex;
+  flex-direction: column; /* stack icons vertically */
+  gap: 10px;
+}
+
+#introH1{
+    font-size: 60px;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  width: 100%;          
+  max-width: 1200px;    
+}
+.logo img {
+  width: 50px;   
+  height: auto;  
+}
+#intro-book{
+    border-color: black;
+    background-color: rgb(181, 255, 170, 0.7);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    font-size:x-large;
+    border-radius: 50px;
+}
+
+#intro-book:hover{
+    background-color: rgba(20, 48, 16);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* ABOUT US */
+
+#aboutUsH1{
+    margin-top: -100px;
+    font-size: 80px;
+}
+#ourTeam{
+    font-size: 40px;
+}
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  color: white;
+}
+
+.card {
+
+  background-color: rgb(181, 255, 170, 0.7);
+  padding: 10px;
+  border-radius: 30px;
+  color: black;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-size: 24px;
+}
+
+
+.aboutUsBtn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(121, 218, 171);
+  color: white;
+  font-weight: bold;
+}
+
+/*CONTACT US*/
+#contactUsH1{
+    font-size: 80px;
+    margin-top: 50px;
+}
+#contactUsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;        
+}
+
+#contactUsForm {
+  background-color: rgb(181, 255, 170, 0.2);
+  margin-left: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 30px;
+}
+
+#contactUsSubmit{
+    border-color: black;
+    background-color: rgb(11, 82, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size:x-large;
+    border-radius: 10px;
+    color: white;
+}
+
+.forms{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+textarea{
+    border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.createdCard {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  box-sizing: border-box;
+
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  color: black;
+}
+
+#results {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+#results .createdCard {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+.aboutUs {
+  position: relative;
+  z-index: 1;
+} 
